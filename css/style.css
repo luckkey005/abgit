@@ -2,6 +2,7 @@
 :root{
 --color-first: #18a7c5;
 --color-second: #5e3d22;
+--color-third:#cdcdcd;
 }
 html {
     scroll-behavior: smooth;
@@ -35,7 +36,9 @@ html {
     .navbar-brand {max-width: 17%;}
 }
 
-
+#testimonials,#contact{padding-top:200px;   padding-bottom:100px;}
+#contact{background-color: var(--color-first); color:#fff;}
+#services{background-color:var(--color-third);}
 
 /* footer css from bootsnip */
 .context-dark, .bg-gray-dark, .bg-primary {
@@ -77,3 +80,49 @@ ul, ol {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .brand img {max-width: 40%;}
+
+.carousel-item img {    width: 100%;    height: auto;}
+
+#about img{max-width:100%; padding:10%; padding-top:0%;}
+
+/* services section css copied from BS */
+.wrap {
+    display: flex;
+    background-color: var(--color-first);
+    padding: 1rem ;
+    border-radius: 0.5rem;
+    box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    transition:all 1s;
+}
+
+.wrap:hover {    
+    background: white;
+    box-shadow:0px 0px 10px 2px #777;
+    color: var(--color-second);
+}
+
+.ico-wrap,.vcenter {
+    margin: auto;
+}
+
+.mbr-iconfont {
+    font-size: 4.5rem !important;
+    color: #313131;
+    margin: 1rem;
+    padding-right: 1rem;
+}
+
+.display-5 {
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+ .mbr-text {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 25px;
+}
+
+/* ucp main section css  */
+.main-section {padding-top:200px;   padding-bottom: 200px;}

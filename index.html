@@ -19,35 +19,37 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <div class="header-top ">
+    <!-- top bar above the navigation bar-->
     <div class="container">
-      
+
       <div class="social-login">
-        <div class="login-links">	
+        <div class="login-links">
           <a href="ucp.html" title="Profile Login"> Login</a>
           <span class="pipe"></span>
           <a href="ucp.html" title="Register"> Register</a>
         </div>
-        
+
         <div class="social-links ">
-          <a href="#" title="Facebook" target="_blank" ><i class="fa fa-facebook"></i></a>
-          <a href="#" title="twitter" target="_blank" ><i class="fa fa-twitter"></i></a>  
-          <a href="#" title="LinkedIn" target="_blank" ><i class="fa fa-linkedin"></i></a>
-          <a href="#" title="Youtube" target="_blank" ><i class="fa fa-youtube"> </i></a>
-        </div>	
+          <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="#" title="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="#" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="#" title="Youtube" target="_blank"><i class="fa fa-youtube"> </i></a>
+        </div>
       </div>
     </div>
   </div>
 
   <nav class="navbar navbar-expand-md bg-light">
+    <!-- navigation bar-->
     <a class="navbar-brand" href="#" style="margin-left:8%;">
       <img src="images/abg Logo 1.png" alt="Logo" class="img-fluid">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ">
         <li class="nav-item ">
           <a class="nav-link" href="#home">Home</a>
@@ -72,73 +74,219 @@
       </ul>
     </div>
   </nav>
-  
- <div style="padding-top:200px; padding-bottom:100px; background-color: blueviolet;">.</div>
 
- <!-- this is footer -->
- <div class="section footer-classic context-dark bg-image" style="background: #2d3246;">
-  <div class="container pt-5">
-    <div class="row row-30">
-      <div class="col-md-4 col-xl-5">
-        <div class="pr-xl-4"><a class="brand" href="#"><img src="images/abg Logo v1.png" alt="logo"></a>
-          <p>Tagline of the organization else one or two sentence about organization in brief goes here.this is different than what we have at home or about section.</p>
-          <!-- Rights-->
-          <p >&copy; Copyright 2019-2020. All Rights Reserved.</p>
+  <!-- This Is Home Section-->
+  <div id="home">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/placeholder1.jpg" alt="image 1">
+          <div class="carousel-caption">
+            <h3>Test Heading 1</h3>
+            <p>Some Description goes here 1</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/placeholder1.jpg" alt="image 2">
+          <div class="carousel-caption">
+            <h3>Test Heading 2</h3>
+            <p>Some Description goes here 1</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/placeholder1.jpg" alt="image 3">
+          <div class="carousel-caption">
+            <h3>Test Heading 3</h3>
+            <p>Some Description goes here 1</p>
+          </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <h5>Contacts</h5>
-        <dl class="contact-list">
-          <dt>Address:</dt>
-          <dd>Plot #007 Some Hills, X road , Hyderabad. <br>TS - 500080</dd>
-        </dl>
-        <dl class="contact-list">
-          <dt>email:</dt>
-          <dd><a href="mailto:#">contact@abgit.com</a></dd>
-        </dl>
-        <dl class="contact-list">
-          <dt>phones:</dt>
-          <dd><a href="tel:#">+91 9123456780</a> or <a href="tel:#">+91 9123456789</a>
-          </dd>
-        </dl>
-      </div>
-      <div class="col-md-4 col-xl-3">
-        <h5>Links</h5>
-        <ul class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contacts</a></li>
-          <li><a href="ucp.html">Jobs</a></li>
-          <li><a href="ucp.html">Pricing</a></li>
-        </ul>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+
+  <!-- This Is About Section-->
+  <div id="about">
+
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col-md-12 col-xl-12">
+          <h2 class="text-center pb-3">About Us</h2>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xl-6">
+          <img src="images/placeholder1.jpg" alt="Some image">
+        </div>
+        <div class="col-md-6 col-sm-6 col-xl-6">
+          <div class="about-text">
+
+            <p class="text-justify">It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters, as opposed to using 'Content here, content here', making it look like
+              readable English.</p>
+            <p class="text-justify">Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+              default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+              Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour
+              and the like).</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="row no-gutters social-container">  <!-- social icons with text at bottom-->
-    <div class="col">
-      <a class="social-inner" href="#">
-      <i class="fa fa-facebook"></i> Facebook
-      </a>
+
+  <!-- This Is Service Section-->
+  <div id="services">
+    <div class="container pt-5 pb-5">
+      <div class="row mbr-justify-content-center">
+        <div class="col-xl-12 col-md-12 pb-3">
+          <h2 class="text-center">Services We Offer</h2>
+        </div>
+        <div class="col-xl-6 col-lg-6 mbr-col-md-10">
+          <div class="wrap">
+            <div class="ico-wrap">
+              <span class="mbr-iconfont fa-volume-up fa"></span>
+            </div>
+            <div class="text-wrap vcenter">
+              <h2 class="display-5">Service 1</h2>
+              <p class="mbr-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 mbr-col-md-10">
+          <div class="wrap">
+            <div class="ico-wrap">
+              <span class="mbr-iconfont fa-calendar fa"></span>
+            </div>
+            <div class="text-wrap vcenter">
+              <h2 class="display-5">Service 2</h2>
+              <p class="mbr-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 mbr-col-md-10">
+          <div class="wrap">
+            <div class="ico-wrap">
+              <span class="mbr-iconfont fa-globe fa"></span>
+            </div>
+            <div class="text-wrap vcenter">
+              <h2 class="display-5">Service 3</h2>
+              <p class="mbr-text ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 mbr-col-md-10">
+          <div class="wrap">
+            <div class="ico-wrap">
+              <span class="mbr-iconfont fa-trophy fa"></span>
+            </div>
+            <div class="text-wrap vcenter">
+              <h2 class="display-5">Service 4</h2>
+              <p class="mbr-text ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
-    <div class="col">
-      <a class="social-inner" href="#">
-      <i class="fa fa-twitter"></i> Twitter
-      </a>
-    </div>
-    <div class="col">
-      <a class="social-inner" href="#">
-      <i class="fa fa-linkedin"></i> LinkedIn
-      </a>
-    </div>
-    <div class="col">
-      <a class="social-inner" href="#">
-      <i class="fa fa-youtube"></i> Youtube
-      </a>
-    </div>
-   
   </div>
-</div>
+
+  <!-- This Is testimonials Section-->
+  <div id="testimonials">
+    <p class="text-center">this is Testimonials Section</p>
+
+  </div>
+
+  <!-- This Is testimonials Section-->
+  <div id="contact">
+    <p class="text-center">this is Contact Section</p>
+  </div>
+
+  <!-- this is footer -->
+  <div class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+    <div class="container pt-5">
+      <div class="row row-30">
+        <div class="col-md-4 col-xl-5">
+          <div class="pr-xl-4"><a class="brand" href="#"><img src="images/abg logo V1.png" alt="logo"></a>
+            <p>Tagline of the organization else one or two sentence about organization in brief goes here.this is
+              different than what we have at home or about section.</p>
+            <!-- Rights-->
+            <p>&copy; Copyright 2019-2020. All Rights Reserved.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Contacts</h5>
+          <dl class="contact-list">
+            <dt>Address:</dt>
+            <dd>Plot #007 Some Hills, X road , Hyderabad. <br>TS - 500080</dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>Email:</dt>
+            <dd><a href="mailto:#">contact@abgit.com</a></dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>Phones:</dt>
+            <dd><a href="tel:#">+91 9123456780</a> or <a href="tel:#">+91 9123456789</a>
+            </dd>
+          </dl>
+        </div>
+        <div class="col-md-4 col-xl-3">
+          <h5>Links</h5>
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contacts</a></li>
+            <li><a href="ucp.html">Jobs</a></li>
+            <li><a href="ucp.html">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters social-container">
+      <!-- social icons with text at bottom-->
+      <div class="col">
+        <a class="social-inner" href="#">
+          <i class="fa fa-facebook"></i> Facebook
+        </a>
+      </div>
+      <div class="col">
+        <a class="social-inner" href="#">
+          <i class="fa fa-twitter"></i> Twitter
+        </a>
+      </div>
+      <div class="col">
+        <a class="social-inner" href="#">
+          <i class="fa fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+      <div class="col">
+        <a class="social-inner" href="#">
+          <i class="fa fa-youtube"></i> Youtube
+        </a>
+      </div>
+
+    </div>
+  </div>
 </body>
 
 </html>
