@@ -29,8 +29,7 @@ html {
 }
 .navbar-collapse{ padding-left: 10%;}
 
-#contact{padding-top:200px;   padding-bottom:100px;}
-#contact{background-color: var(--color-first); color:#fff;}
+#contact{background-color: var(--color-third); color:#fff;}
 #services{background-color:var(--color-third);}
 
 /* footer css from bootsnip */
@@ -159,17 +158,11 @@ ul, ol {
   }
 .mute {color:#999; font-style: italic; font-size: 0.8rem;}  
 
-myBtn {
-    display: inline-block;
-    position: absolute;
-    margin: -6% -5% -5% 40%;
-    padding: 1%;
-    border-radius: 50%;
-    background-color: rgb(45, 50, 70);
-    font-size: 3rem;
-    color: var(--color-first);
-    cursor: pointer;}
+/* contact section goes here */
+.sbt {float: right;    width: auto;}
+.input-group-text{ width:50px; font-size:1.5rem; color:var(--color-first);}
 
+/* go to top button goes here */
     #myBtn {
         display: none; 
         position: fixed; 

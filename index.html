@@ -14,6 +14,8 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script> -->
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -224,7 +226,7 @@
                 <div class="col-sm-9">
                   <h3>Gives me hope</h3>
                   <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quis nostrum laboriosam consequatur distinctio dolorum labore vero velit maiores adipisci!.</small>
-                  <small class="  mute">- Krishna </small>
+                  <small class="mute">- Krishna </small>
                 </div>
               </div>
             </div>
@@ -238,7 +240,7 @@
                 <div class="col-sm-9">
                   <h3>You will love it.</h3>
                   <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla veritatis quod magnam. Ratione optio, cupiditate corporis fuga magnam minima. Dignissimos?</small>
-                  <small class="  mute">- Srinivas </small>
+                  <small class="mute">- Srinivas </small>
                 </div>
               </div>
             </div>
@@ -252,7 +254,7 @@
                 <div class="col-sm-9">
                   <h3>Best Service</h3>
                   <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veniam est nam ut eius ex facilis eum provident vel maxime?</small>
-                  <small class="  mute">- Venkat </small>
+                  <small class="mute">- Venkat </small>
                 </div>
               </div>
             </div>
@@ -274,7 +276,56 @@
 
   <!-- This Is contact Section-->
   <div id="contact">
-    <p class="text-center">this is Contact Section</p>
+   <div class="container pt-5 pb-5">
+     <div class="row">
+       <div class="col-md-2"></div>
+       <div class="col-md-8">
+         <div class="row">
+           <div class="col-md-12">
+             <form id='contactform' action="mailto:contact@abgit.com" method="POST" >
+
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" onblur="namevalidate()">
+
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                  </div>
+                  <input type="email" class="form-control" id="mail" name="mail" placeholder="Enter Email">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-mobile" style="padding-left:40%"></i></span>
+                  </div>
+                  <input type="number" class="form-control" id="mobile" name="mobile" placeholder="Enter Mobile No">
+                </div>
+              </div>
+
+              <div class="form-group">
+                  <textarea class="form-control" id="comment" placeholder="Enter Comments" name="comment" rows="8"></textarea>
+              </div>
+
+              <div class="form-group">
+                  <button type="submit" class="form-control sbt" name="submit" > <i class="fa fa-paper-plane"></i> Send </button>
+              </div>
+              
+             </form>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
   </div>
 
   <!-- this is footer -->
@@ -361,7 +412,53 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
-    </script>
+</script>
+<!-- <script>
+    $(document).ready(function() {
+    $('#contact').submit(function(e) {
+    e.preventDefault();
+    var name = $('#name').val();
+    var mail = $('#mail').val();
+    var mobile = $('#mobile').val();
+    var comment = $('#comment').val();
+
+    $('#contact').validate({
+  rules: {
+    name: 'required',
+    mail: {
+      required: true,
+      email: true,
+    },
+    mobile: {
+      required: true,
+      minlength: 10,
+      maxlength:10
+    },
+    comment: {
+      required:true,
+      minlength: 10,
+    }
+  },
+  messages: {
+    name: 'This field is required',
+    mail: 'Enter a valid email',
+    mobile: {
+      minlength: 'Mobile must be 10 characters long'
+    },
+    comment: 'Comments should atleast 10 characters'
+  },
+ 
+  submitHandler: function(form) {
+    form.submit();
+  }
+});
+    });
+});
+  </script> -->
+
+  <script>
+    
+  </script>
 </body>
 
 </html>
