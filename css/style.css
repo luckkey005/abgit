@@ -78,6 +78,13 @@ ul, ol {
 #about img{max-width:100%; padding:10%; padding-top:0%;}
 
 /* services section css copied from BS */
+#services {
+    background-image: url('../images/homeimage2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 .wrap {
     display: flex;
     background-color: var(--color-first);
@@ -161,6 +168,8 @@ ul, ol {
 /* contact section goes here */
 .sbt {float: right;    width: auto;}
 .input-group-text{ width:50px; font-size:1.5rem; color:var(--color-first);}
+.element.error{ color:red;}
+.element.success{color:green;}
 
 /* go to top button goes here */
     #myBtn {
