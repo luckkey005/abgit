@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title> </title>
+  <title> Advaitha Business Group </title>
   <link rel="shortcut icon" href="images/abg_favicon.png" type="image/x-icon">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -153,9 +153,9 @@
   <div id="services">
     <div class="container pt-5 pb-5">
       <div class="row mbr-justify-content-center">
-        <div class="col-xl-12 col-md-12 pb-3">
+        <!-- <div class="col-xl-12 col-md-12 pb-3">
           <h2 class="text-center">Services We Offer</h2>
-        </div>
+        </div> -->
         <div class="col-xl-6 col-lg-6 mbr-col-md-10">
           <div class="wrap">
             <div class="ico-wrap">
@@ -212,64 +212,27 @@
 
   <!-- This Is testimonials Section-->
   <div id="testimonials">
-    <div class="card col-md-6 mt-5 mb-5">
-      <div id="testimonialcarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
-        <div class="w-100 carousel-inner" role="listbox">
-          <div class="carousel-item active">  
-            <div class="carousel-caption">
-              <div class="row">
-                <div class="col-sm-3">
-                  <img src="images/place1.jpg" alt="" class="rounded-circle img-fluid"/>
-                </div>
-                <div class="col-sm-9">
-                  <h3>Gives me hope</h3>
-                  <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quis nostrum laboriosam consequatur distinctio dolorum labore vero velit maiores adipisci!.</small>
-                  <small class="mute">- Krishna </small>
-                </div>
-              </div>
-            </div>
+      <div class="row p-5 box pl-0">
+          <div class="col-sm-3 col-md-3 col-lg-3 p-5 shadow col-xs-12 text-center m-auto">
+            <img src="images/place1.jpg" alt="" class="rounded-circle img-fluid"/>
+            <h3>Gives me hope</h3>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quis nostrum laboriosam consequatur distinctio dolorum labore vero velit maiores adipisci!.</small>
+            <small class="mute">- Krishna </small>
           </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <div class="row">
-                <div class="col-sm-3">
-                  <img src="images/place1.jpg" alt="" class="rounded-circle img-fluid">
-                </div>
-                <div class="col-sm-9">
-                  <h3>You will love it.</h3>
-                  <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla veritatis quod magnam. Ratione optio, cupiditate corporis fuga magnam minima. Dignissimos?</small>
-                  <small class="mute">- Srinivas </small>
-                </div>
-              </div>
-            </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 p-5 shadow col-xs-12 text-center m-auto">
+            <img src="images/place1.jpg" alt="" class="rounded-circle img-fluid"/>
+            <h3>Gives me hope</h3>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quis nostrum laboriosam consequatur distinctio dolorum labore vero velit maiores adipisci!.</small>
+            <small class="mute">- Krishna </small>
           </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <div class="row">
-                <div class="col-sm-3">
-                  <img src="images/place1.jpg" alt="" class="rounded-circle img-fluid">
-                </div>
-                <div class="col-sm-9">
-                  <h3>Best Service</h3>
-                  <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veniam est nam ut eius ex facilis eum provident vel maxime?</small>
-                  <small class="mute">- Venkat </small>
-                </div>
-              </div>
-            </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 p-5 shadow col-xs-12 text-center m-auto">
+            <img src="images/place1.jpg" alt="" class="rounded-circle img-fluid"/>
+            <h3>Gives me hope</h3>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quis nostrum laboriosam consequatur distinctio dolorum labore vero velit maiores adipisci!.</small>
+            <small class="mute">- Krishna </small>
           </div>
+                  
         </div>
-        <div class="float-right navi">
-        <a class="" href="#testimonialcarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon ico" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="" href="#testimonialcarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon ico" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-        </div>
-      </div>
-    </div>
   </div>
 
   <!-- This Is contact Section-->
@@ -372,7 +335,6 @@
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contacts</a></li>
             <li><a href="ucp.html">Jobs</a></li>
-            <li><a href="ucp.html">Pricing</a></li>
           </ul>
         </div>
       </div>
@@ -420,64 +382,6 @@
       document.documentElement.scrollTop = 0;
     }
 </script>
-<!-- <script>
-    $(document).ready(function() {
-    $('#contact').submit(function(e) {
-    e.preventDefault();
-    var name = $('#name').val();
-    var mail = $('#mail').val();
-    var mobile = $('#mobile').val();
-    var comment = $('#comment').val();
-
-    $('#contact').validate({
-  rules: {
-    name: 'required',
-    mail: {
-      required: true,
-      email: true,
-    },
-    mobile: {
-      required: true,
-      minlength: 10,
-      maxlength:10
-    },
-    comment: {
-      required:true,
-      minlength: 10,
-    }
-  },
-  messages: {
-    name: 'This field is required',
-    mail: 'Enter a valid email',
-    mobile: {
-      minlength: 'Mobile must be 10 characters long'
-    },
-    comment: 'Comments should atleast 10 characters'
-  },
- 
-  submitHandler: function(form) {
-    form.submit();
-  }
-});
-    });
-});
-  </script> -->
-<!-- 
-  <script>
-    var nm=document.getElementById('name');
-    function namevalidate(){
-      if (nm.value==''){
-        console.log(' Name must be enter ');
-        Document.get
-      }
-      else if (nm.value.length<=3){
-        console.log('Name should greater than 3 letters');
-      }
-      else {
-        console.log('Name is Perfect');
-      }
-    }
-  </script> -->
   <script>
       // Disable form submissions if there are invalid fields
       (function() {
