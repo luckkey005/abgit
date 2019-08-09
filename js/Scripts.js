@@ -26,15 +26,15 @@ scene.add(fillLight);
 scene.add(backLight);
 
 var mtlLoader = new THREE.MTLLoader();
-mtlLoader.setTexturePath('/assets/');
-mtlLoader.setPath('/assets/');
+mtlLoader.setTexturePath('./assets/');
+mtlLoader.setPath('./assets/');
 mtlLoader.load('Mod_XJT3086.mtl', function (materials) {
 
     materials.preload();
 
     var objLoader = new THREE.OBJLoader();
     objLoader.setMaterials(materials);
-    objLoader.setPath('/assets/');
+    objLoader.setPath('./assets/');
     objLoader.load('Mod_XJT3086.obj', function (object) {
 
         scene.add(object);
